@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREST CANCER PREDITCTION</title>
+
+    <!-- Link CSS File -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="login">
+        <h1>CANCER PREDICTION MODEL</h1>
+        <form action="{{ url_for('predict') }}" method="post">
+            <input type="number" name="concave_points_worst" placeholder="Concave Points Worst" step="any" required />
+            <input type="number" name="perimeter_worst" placeholder="Perimeter Worst" step="any" required />
+            <input type="number" name="concave_points_mean" placeholder="Concave Points Mean" step="any" required />
+            <input type="number" name="radius_worst" placeholder="Radius Worst" step="any" required />
+            <input type="number" name="perimeter_mean" placeholder="Perimeter Mean" step="any" required />
+            <input type="number" name="area_worst" placeholder="Area Worst" step="any" required />
+            <input type="number" name="radius_mean" placeholder="Radius Mean" step="any" required />
+            <input type="number" name="area_mean" placeholder="Area Mean" step="any" required />
+            <input type="number" name="concavity_mean" placeholder="Concavity Mean" step="any" required />
+            <input type="number" name="concavity_worst" placeholder="Concavity Worst" step="any" required />
+            
+            
+            <button type="submit" class="btn">Predict</button>
+        </form>
+        <h1 id="predi">
+            {{ prediction_text }}
+        </h1>
+    </div>
+</body>
+</html>
