@@ -35,7 +35,7 @@ Decision Tree
 Random Forest
 
 
-⚡ Technologies Used
+⚡Technologies Used
 
 Python
 
