@@ -1,0 +1,36 @@
+
+body {
+    background: url("../static/images/cancer.png");
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+.container {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+
+}
+
+
